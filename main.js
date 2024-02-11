@@ -84,7 +84,7 @@ function list(places) {
 function game() {
     window.location = "game.html"
 }
-function search() {window.location = "search.html"}
+function search() {window.location = "index.html"}
 function wishlist() {window.location = "wishlist.html"}
 
 
