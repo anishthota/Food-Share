@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Place Searches</title>
+    <script src='main.js' defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+        <h1>Food Share</h1>
+        <label id="quote">"If you can't feed a hundred people, then feed <i> just one</i>." - Mother Teresa</label>
+        <br>
+        <div id="nav">
+            <label onclick='game()' class='navButton' id="gameButton">Game</label>
+            <label onclick='search()' class='navButton' id="mapButton" style="border-color: lightcoral;">Search</label>
+            <label onclick='wishlist()' class='navButton' id="wishlistButton">Wanted Food</label>
+        </div>
+    </div>
+    <br> <br>
+    <div>
+        <h2>Find Pantries Near You</h2>
+        <input type="text" id="locationInput" placeholder="Street / City / State...">
+        <button id="enterLocation" onclick="enterLocation()">Enter</button>
+        <br> <br>
+    </div>
+    <br>
+    <div id="map"></div>
+    <div id="locationList"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYOozU4ZE1B7NJhnkSpmQj2mqZ2Z0FEsM&callback=initMap&libraries=places&v=weekly" defer></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Place Searches</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src='main.js' defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+        <h1>Food Share</h1>
+        <label id="quote">"If you can't feed a hundred people, then feed <i> just one</i>." - Mother Teresa</label>
+        <br>
+        <div id="nav">
+            <label onclick='game()' class='navButton' id="gameButton">Game</label>
+            <label onclick='search()' class='navButton' id="mapButton">Search</label>
+            <label onclick='wishlist()' class='navButton' id="wishlistButton" style="border-color: lightcoral;">Wanted Food</label>
+        </div>
+    </div>
+    <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; color: lightcoral">MORE LOCATIONS COMING SOON</h1>
+    <br>
+    <h2>In Loudoun County...</h2>
+    <br>
+    <h3 style="font-size: 20px;">The most needed food items are: </h3>
+    <div id="grid">
+        <div class="gridItem" id="gridItem1">Canned Fruits & Vegetables</div>
+        <div class="gridItem" id="gridItem2">Peanut Butter</div>
+        <div class="gridItem" id="gridItem3">Canned Beans & Soup</div>
+        <div class="gridItem" id="gridItem4">Cereal</div>
+        <div class="gridItem" id="gridItem5">Canned Meat</div>
+        <div class="gridItem" id="gridItem6">Fresh Fruits & Vegetables</div>
+        <div class="gridItem" id="gridItem7">Granola Bars</div>
+        <div class="gridItem" id="gridItem8">Rice</div>
+        <div class="gridItem" id="gridItem9">Whole Grain Pasta</div>
+    </div>
+    </body>
+    </html>

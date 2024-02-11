@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Place Searches</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src='main.js' defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+        <h1>Food Share</h1>
+        <label id="quote">"If you can't feed a hundred people, then feed <i> just one</i>." - Mother Teresa</label>
+        <br>
+        <div id="nav">
+            <label onclick='game()' class='navButton' id="gameButton" style="border-color: lightcoral;">Game</label>
+            <label onclick='search()' class='navButton' id="mapButton">Search</label>
+            <label onclick='wishlist()' class='navButton' id="wishlistButton">Wanted Food</label>
+        </div>
+    </div>
+    <br> <br>
+    <div id="time" style="display: inline;">Time: </div>
+    <div id="money" style="display: inline;">Money: $100</div>
+    <br> <br> <br> <br>
+    <div id="breadLabel" style="display: inline;">Bread: </div>
+    <div id="appleLabel" style="display: inline;">Apples: </div>
+    <div id="pastaLabel" style="display: inline;">Pasta: </div>
+    <br> <br>
+    <div class='buyButton' id="buyBread" onclick="addBread()" style="background-image: url(Bread.png); background-size: 8vw 8vw;"></div>
+    <div class='buyButton' id="buyApple" onclick="addApple()" style="background-image: url(Apple.png); background-size: 8vw 8vw;"></div>
+    <div class='buyButton' id="buyPasta" onclick="addPasta()" style="background-image: url(pasta.png); background-size: 8vw 8vw;"></div>
+    <br> <br>
+    <div class='customer' id="customer"></div>
+    <div id="endOfTheDayResults">
+        <label style="font-size: 35px; font-weight: bold;">Donation Time!</label>
+        <br> <br>
+        <label id="endOfTheDayBread">Bread: </label>
+        <br> <br>
+        <label id="endOfTheDayApple">Apples: </label>
+        <br> <br>
+        <label id="endOfTheDayPasta">Pasta: </label>
+        <br> <br>
+        <button id="donate" style="width: fit-content; height: 10%" onclick="donate()">Donate Food</button>
+    </div>
+    </body>
+    </html>

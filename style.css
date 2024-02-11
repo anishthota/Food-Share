@@ -1,0 +1,140 @@
+body {
+    background-color: hsl(229, 100%, 84%);
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+#nav {margin-top: 5vh;}
+
+.navButton {color: white; border: 2px solid hsl(108, 88%, 77%); border-radius: 5cqw; padding: 5px 10px; font-size: 21px;}
+.navButton:hover {cursor:pointer;}
+
+#gameButton {margin-right: 5vw;}
+#wishlistButton {margin-left: 5vw;}
+
+h1 {color: white; font-size: 64px;}
+br {user-select: none;}
+#quote {color: white; font-size: xx-large;}
+#quote:hover {width: 70%; transition: width 2s ease;}
+
+#header {
+    background-image: linear-gradient(rgba(0,0,0,0.5) 95%, rgba(0,0,0,0) 150%);
+    top: 2.5vh;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 2.5vh;
+}
+
+h2, h3 {margin-top: 0; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 32px;}
+
+#locationInput {width: 15vw; height: 4vh; margin-top: 1vh; margin-bottom: 5vh; font-size: medium; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+#locationInput:checked {border: none;}
+#enterLocation {width: 5vw; height: 4vh; margin-left: 2vw; display: inline; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: medium; background-color: lightgreen; border: 1px groove black;}
+#enterLocation:hover {cursor: pointer; background-color: hsl(120, 73%, 70%);}
+
+#locationEntering {
+    position: relative;
+    margin-top: 1vh;
+    padding-bottom: 10vh;
+}
+
+#map {
+    width: 40%;
+    height: 50vmin;
+    right: 2.5%;
+    border: 3px solid black;
+    border-radius: 1%;
+    position: absolute;
+}
+
+.card {
+    width: fit-content;
+    margin: 10px 10px 10px 5px;
+    padding: 10px 10px 30px 5px;
+    color: black;
+    border: 1px solid green;
+    display: block;
+}
+
+.cardTitle {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; font-size: 2vmin; text-decoration: underline; float: left;}
+.card p {float: left; margin-top: 0;}
+.card .rating {color: red; margin: 0; padding: 0; text-decoration: none !important;}
+
+/*WISHLIST CSS*/
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 450px;
+    height: 450px;
+    gap: 20px;
+    position: absolute;
+    left: calc(50% - 245px);
+}
+
+.gridItem {
+    background-color: hsl(182, 57%, 79%);
+    width: 150px;
+    height: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*GAME CSS*/
+
+#time, #money, #breadLabel, #appleLabel, #pastaLabel {
+    background-color: lightgreen;
+    width: fit-content;
+    font-size: 24px;
+    padding: 3px 10px;
+    border-radius: 10%;
+    margin: 15px;
+}
+
+.buyButton {
+    width: 8vw;
+    height: 8vw;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+
+.buyLabel {display: inline; position: absolute; left: calc(18vw + 30px);}
+
+.customer {
+    width: 8vw;
+    height: 8vw;
+    background-color: hsl(250, 91%, 91%);
+    position: absolute;
+    left: calc(50% - 4vw);
+    bottom: 36vh;
+}
+.customer2 {bottom: 18vh;}
+
+#pay, #donate {
+    background-color: lime;
+    border: none;
+    width: 30%;
+    height: 20%;
+}
+
+#endOfTheDayResults {
+    width: 40vmin;
+    height: 25vmin;
+    background-color: rgb(63, 151, 202);
+    position: absolute;
+    right: 6%;
+    bottom: 45%;
+    color: white;
+    display: none;
+}
+
+#endOfTheDayResults label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
