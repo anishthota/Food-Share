@@ -108,7 +108,7 @@ function timeUpdate() {
         document.getElementById("buyPasta").style.display = "none"
     }
     if (time == 20) {
-        if (paystatus != true) {alert("YOU FAILED!"); window.location = "search.html"}
+        if (paystatus != true) {alert("YOU FAILED!"); window.location = "index.html"}
         clearInterval(interval)
         document.getElementById("endOfTheDayResults").style.display = "block"
         document.getElementById("endOfTheDayBread").innerHTML = "Bread: " + bread;
@@ -134,7 +134,7 @@ function pay() {
     bread = bread - customerbread; 
     apples = apples - customerapples; 
     pasta = pasta - customerpasta; 
-    if ((bread < 0) || (apples < 0) || (pasta < 0)) {alert("YOU FAILED!"); window.location = "search.html"}
+    if ((bread < 0) || (apples < 0) || (pasta < 0)) {alert("YOU FAILED!"); window.location = "index.html"}
     money = money + customerbread *4 +customerapples*5 + customerpasta*8;
     document.getElementById("customer").innerHTML = ""
     update()
